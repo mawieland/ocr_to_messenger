@@ -82,7 +82,7 @@ def get_position(bot, update):
 
 def start_alarm(bot, update, job_queue, chat_data):
 
-    def check_if_queue_active():
+    def check_if_queue_inactive():
         queue_is_active = True
 
         np_image_grab = np.array(ImageGrab.grab(bbox=queue_msg_box))
@@ -110,7 +110,7 @@ def start_alarm(bot, update, job_queue, chat_data):
     queue_active = True
 
     while queue_active:
-        if check_if_queue_active():
+        if check_if_queue_inactive():
             queue_active = False
         else:
             sleep(5)
