@@ -59,6 +59,8 @@ while test_run:
         cv2.destroyAllWindows()
         break
 
+    sleep(1)
+
 
 def spam_user(bot, job):
     bot.send_message(job.context, text=WAKE_UP_MESSAGE)
@@ -168,5 +170,5 @@ dispatcher.add_error_handler(error)
 
 # Start the Bot
 
-# updater.start_polling()
-# updater.idle()
+updater.start_polling()
+updater.idle()
