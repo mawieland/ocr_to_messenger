@@ -7,6 +7,7 @@ https://youtu.be/cQge6o26k70
 # Installation
 
 - install PyCharmCommunity Edition from https://www.jetbrains.com/pycharm/download/other.html
+- install python 3 https://www.python.org/downloads/windows/
 - follow this https://www.jetbrains.com/pycharm/guide/tips/create-project-from-github/
 - use https://github.com/mawwy/ocr_to_messenger.git as URL
 - PyCharm asks you to install libraries from requirements.txt, do this
