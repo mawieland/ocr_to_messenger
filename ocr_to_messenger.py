@@ -8,12 +8,13 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 import logging
 
-from private_stuff import BOT_TOKEN
+# from private_stuff import BOT_TOKEN
 # telegram_token = BOT_TOKEN
 
 # ENTER YOUR TOKEN HERE
 # ENTER YOUR TOKEN HERE
 # ENTER YOUR TOKEN HERE
+# it should look like
 telegram_token = "TOKEN"
 
 ALERT_SPAM_INTERVAL = 15  # time between messages when queue is over to WAKE YOU UP
@@ -140,8 +141,6 @@ logger = logging.getLogger(__name__)
 def error(bot, update, error):
     """Log Errors caused by Updates."""
     logger.warning('Update "%s" caused error "%s"', update, error)
-
-
 
 
 updater = Updater(token=telegram_token)
